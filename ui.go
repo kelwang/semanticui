@@ -10,67 +10,82 @@ type Semantic struct {
 }
 
 func NewSemantic(i ...interface{}) Semantic {
-	return Semantic{jquery.NewJQuery(i)}
+	return Semantic{jquery.NewJQuery(i...)}
 }
 
 //Modules
 
 func (s Semantic) Accordion(i ...interface{}) Semantic {
-	return NewSemantic(s.Call("accordion", i...))
+	s.Call("accordion", i...)
+	return s
 }
 
 func (s Semantic) Checkbox(i ...interface{}) Semantic {
-	return NewSemantic(s.Call("checkbox", i...))
+	s.Call("checkbox", i...)
+	return s
 }
 
 func (s Semantic) Dimmer(i ...interface{}) Semantic {
-	return NewSemantic(s.Call("dimmer", i...))
+	s.Call("dimmer", i...)
+	return s
 }
 
 func (s Semantic) Dropdown(i ...interface{}) Semantic {
-	return NewSemantic(s.Call("dropdown", i...))
+	s.Call("dropdown", i...)
+	return s
 }
 
 func (s Semantic) Embed(i ...interface{}) Semantic {
-	return NewSemantic(s.Call("embed", i...))
+	s.Call("embed", i...)
+	return s
 }
 
 func (s Semantic) Modal(i ...interface{}) Semantic {
-	return NewSemantic(s.Call("modal", i...))
+	s.Call("modal", i...)
+	return s
 }
 
 func (s Semantic) Popup(i ...interface{}) Semantic {
-	return NewSemantic(s.Call("popup", i...))
+	s.Call("popup", i...)
+	return s
 }
 
 func (s Semantic) Progress(i ...interface{}) Semantic {
-	return NewSemantic(s.Call("progress", i...))
+	s.Call("progress", i...)
+	return s
 }
 
 func (s Semantic) Rating(i ...interface{}) Semantic {
-	return NewSemantic(s.Call("rating", i...))
+	s.Call("rating", i...)
+	return s
 }
 
 func (s Semantic) Search(i ...interface{}) Semantic {
-	return NewSemantic(s.Call("search", i...))
+	s.Call("search", i...)
+	return s
 }
 
 func (s Semantic) Shape(i ...interface{}) Semantic {
-	return NewSemantic(s.Call("shape", i...))
+	s.Call("shape", i...)
+	return s
 }
 
 func (s Semantic) Sidebar(i ...interface{}) Semantic {
-	return NewSemantic(s.Call("sidebar", i...))
+	s.Call("sidebar", i...)
+	return s
 }
 
 func (s Semantic) Sticky(i ...interface{}) Semantic {
-	return NewSemantic(s.Call("sticky", i...))
+	s.Call("sticky", i...)
+	return s
 }
 
 func (s Semantic) Tab(i ...interface{}) Semantic {
-	return NewSemantic(s.Call("tab", i...))
+	s.Call("tab", i...)
+	return s
 }
 
 func (s Semantic) Transition(i ...interface{}) Semantic {
-	return NewSemantic(s.Call("transition", i...))
+	s.Call("transition", i...)
+	return s
 }
