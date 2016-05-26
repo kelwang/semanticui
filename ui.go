@@ -89,3 +89,18 @@ func (s Semantic) Transition(i ...interface{}) Semantic {
 	s.Call("transition", i...)
 	return s
 }
+
+func (s Semantic) Api(i ...interface{}) Semantic {
+	s.Call("api", i...)
+	return s
+}
+
+func (s Semantic) Form(i ...interface{}) Semantic {
+	s.Call("form", i...)
+	return s
+}
+
+func (s Semantic) Visibility(i ...interface{}) Semantic {
+	s.Call("visibility", i...)
+	return s
+}
